@@ -1,0 +1,23 @@
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(171, 171, 171);
+}
+#lancamentos{
+  background-color: rgb(221, 220, 220);
+  padding: 2rem;
+  color:#4d4d4de3;
+}
+.img-lancamento {
+
+  min-width: 100%;
+  min-height: 100%;
+
+}
+.espaco { 
+  margin-bottom: -50px;
+}
+.img-destaque {
+  max-width: 100%;
+  min-height: 100%;
+}
+
