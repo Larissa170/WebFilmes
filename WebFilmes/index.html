@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="icon" href="imgs/pipoca_icone.png" type="image/icon type">
-  <link rel="stylesheet" href="style/style.css"> 
-  
+  <link rel="icon" href="imgs/pipoca_icone.png" type="image/png">
+  <link rel="stylesheet" href="style/style.css">
   <title>Pipoca Filmes</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navCabecalho" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navCabecalho">
-      <a class="navbar-brand" href="#">
-        <img src="imgs/pipoca_icone.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Pipoca Filmes
-      </a>
-      <a class="navbar-brand" href="#lancamentos">Lançamentos</a>
-      <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Em Destaque</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Avaliações</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Entrevista & Making-of</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Novidades</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
+
+  <nav class="navbar navbar-expand-xxl navbar-light bg-light">
+    <div class="container-fluid">
+      <div class="d-flex">
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navCabecalho" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="imgs/pipoca_icone.png" class="img-brand me-2" alt="pipoca filmes">
+          Pipoca Filmes
+        </a>
+      </div>        
+      <div class="collapse navbar-collapse" id="navCabecalho">
+        <ul class="navbar-nav ms-auto mb-2 me-3 mb-xxl-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#lancamentos">Lançamentos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#em-destaque">Em Destaque</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ultimas-avaliacoes">Avaliações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#entrevistas-making-of">Entrevista & Making-of</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link last" href="#novidades">Novidades</a>
+          </li>
+        </ul>
+      </div>
+      <form class="my-2 my-xxl-0" style="display: inline-block;">
         <div class="input-group">          
           <span class="input-group-text" id="basic-addon1"><i class="bi bi-search"></i></span>
           <input class="form-control" type="search" placeholder="Pesquisar Filme" aria-label="Pesquisar">
@@ -48,43 +51,50 @@
       </form>
     </div>
   </nav>
-  <section id="lancamentos">
-    <h3 class="my-3 text-center">Lançamentos</h3>    
+
+  <section class="container-fluid pt-4" id="lancamentos">
+    
+    <h2 class="text-center mb-5">Lançamentos</h2>
+
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-      <div class="carousel-indicators espaco">
+      
+      <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
+      
       <div class="carousel-inner">
-        <div class="container">
+        <div class="container-fluid">
+
           <div class="carousel-item active">              
             <div class="row">
-              <div class="col-md-6">
-                <iframe class='img-lancamento' src="https://www.youtube.com/embed/aWVS9OZ3Q8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="col-md-7">
+                <iframe class="video-fluid" src="https://www.youtube.com/embed/aWVS9OZ3Q8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="col-md-6">
-                <h5>DESENCANTADA</h5>
+              <div class="col-md-5">
+                <h4>DESENCANTADA</h4>
                 <p>
-                  Dez anos depois de seu final feliz, Giselle (Amy Adams) passa a questionar o verdadeiro significado de felicidade. No entanto, em seu processo de reflexão, ela acaba transformando a vida das pessoas do mundo real e afetando o reino encantado de Andalasia. A sinopse completa ainda não foi divulgada. 
+                  <span class="fw-bold">Sinopse:</span> Dez anos depois de seu final feliz, Giselle (Amy Adams) passa a questionar o verdadeiro significado de felicidade. No entanto, em seu processo de reflexão, ela acaba transformando a vida das pessoas do mundo real e afetando o reino encantado de Andalasia. A sinopse completa ainda não foi divulgada. 
                 </p>
-                <span class="fw-bold">Diretor:</span>
-                <span class="mx-1"> Adam Shankman </span>
-                <span class="fw-bold">Roteiro:</span> 
-                <span class="mx-1">David N. Weiss , J. David Stem , Jessie Nelson </span>
-                <span class="fw-bold">Estreia:</span>
-                <span class="mx-1"> 2022 </span>
-                <p class="fw-bold mt-2">Elenco:
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Amy Adams | </li>
-                    <li class="list-inline-item">James Marsden | </li>
-                    <li class="list-inline-item">Patrick Dempsey | </li>
-                    <li class="list-inline-item">Jayma Mays | </li>
-                    <li class="list-inline-item">Gabriella Baldachino | </li>
-                    <li class="list-inline-item">Idina Menzel</li>
-                  </ul>
-                </p>
-                <p class="fw-bold my-y mb-1">Avaliação:
+                <p class="fw-bold d-inline">Diretor:</p>
+                <p class="d-inline me-3">Adam Shankman</p>
+                <p class="fw-bold d-inline">Roteiro:</p> 
+                <p class="d-inline me-3">David N. Weiss, J. David Stem, Jessie Nelson</p>
+                <p class="fw-bold d-inline">Estreia:</p>
+                <p class="d-inline">2022</p>
+                <p class="fw-bold mt-3">Elenco:</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">Amy Adams | </li>
+                  <li class="list-inline-item">James Marsden | </li>
+                  <li class="list-inline-item">Patrick Dempsey | </li>
+                  <li class="list-inline-item">Jayma Mays | </li>
+                  <li class="list-inline-item">Gabriella Baldachino | </li>
+                  <li class="list-inline-item">Idina Menzel</li>
+                </ul>
+                <p class="fw-bold">Avaliação:</p>
+                <p>
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
                   <i class="bi bi-star"></i>
@@ -94,30 +104,31 @@
               </div>
             </div>                  
           </div>
+
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-6">
-                <iframe class='img-lancamento' src="https://www.youtube.com/embed/IK1sEiHodZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div class="col-md-7">
+                <iframe class="video-fluid" src="https://www.youtube.com/embed/IK1sEiHodZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
-              <div class="col-md-6">
-                <h5>A MULHER REI</h5>
+              <div class="col-md-5">
+                <h4>A MULHER REI</h4>
                 <p>
-                  A Mulher Rei acompanha Nanisca (Viola Davis) que foi uma comandante do exército do Reino de Daomé, um dos locais mais poderosos da África nos séculos XVII e XIX. Durante o período, o grupo militar era composto apenas por mulheres que, juntas, combateram os colonizadores franceses, tribos rivais e todos aqueles que tentaram escravizar seu povo e destruir suas terras. Conhecidas como Agojie, o grupo foi criado por conta de sua população masculina enfrentar altas baixas na violência e guerra cada vez mais frequentes com os estados vizinhos da África Ocidental, o que levou Dahomey a ser forçado a dar anualmente escravos do sexo masculino, particularmente ao Império Oyo, que usou isso para troca de mercadorias como parte do crescente fenômeno do comércio de escravos na África Ocidental durante a Era dos Descobrimentos, o que fez com que mulheres fossem alistadas para o combate.
+                  <span class="fw-bold">Sinopse:</span> A Mulher Rei acompanha Nanisca (Viola Davis) que foi uma comandante do exército do Reino de Daomé, um dos locais mais poderosos da África nos séculos XVII e XIX. Durante o período, o grupo militar era composto apenas por mulheres que, juntas, combateram os colonizadores franceses, tribos rivais e todos aqueles que tentaram escravizar seu povo e destruir suas terras. Conhecidas como Agojie, o grupo foi criado por conta de sua população masculina enfrentar altas baixas na violência e guerra cada vez mais frequentes com os estados vizinhos da África Ocidental, o que levou Dahomey a ser forçado a dar anualmente escravos do sexo masculino, particularmente ao Império Oyo, que usou isso para troca de mercadorias como parte do crescente fenômeno do comércio de escravos na África Ocidental durante a Era dos Descobrimentos, o que fez com que mulheres fossem alistadas para o combate.
                 </p>
-                <span class="fw-bold">Diretor:</span> 
-                <span class="mx-1">Gina Prince-Bythewood</span> 
-                <span class="fw-bold">Roteiro:</span> 
-                <span class="mx-1">Maria Bello. Dana Steves</span> 
-                <span class="fw-bold">Estreia: </span> 
-                <span class="mx-1">2022</span>
-                <p class="fw-bold mt-2">Elenco:
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Viola Davis |</li>
-                    <li class="list-inline-item">Thurso Mbedu |</li>
-                    <li class="list-inline-item">Lashana Lynch</li>
-                  </ul>
-                </p>
-                <p class="fw-bold my-y mb-1">Avaliação:
+                <p class="fw-bold d-inline">Diretor:</p> 
+                <p class="d-inline me-3">Gina Prince-Bythewood</p> 
+                <p class="fw-bold d-inline">Roteiro:</p> 
+                <p class="d-inline me-3">Maria Bello. Dana Steves</p> 
+                <p class="fw-bold d-inline">Estreia: </p> 
+                <p class="d-inline me-3">2022</p>
+                <p class="fw-bold mt-3">Elenco:</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">Viola Davis |</li>
+                  <li class="list-inline-item">Thurso Mbedu |</li>
+                  <li class="list-inline-item">Lashana Lynch</li>
+                </ul>
+                <p class="fw-bold">Avaliação:</p>
+                <p>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -127,29 +138,31 @@
               </div>
             </div>  
           </div>
+
           <div class="carousel-item">
             <div class="row">
-              <div class="col-md-6">
-                <iframe class='img-lancamento' src="https://www.youtube.com/embed/oLCeh_pqjes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
-              <div class="col-md-6">
-                <h5>MINIONS 2: A ORIGEM DE GRU</h5>
+              <div class="col-md-7">
+                <iframe class="video-fluid" src="https://www.youtube.com/embed/oLCeh_pqjes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-5">
+                <h4>MINIONS 2: A ORIGEM DE GRU</h4>
                 <p>
-                  Minions 2: A Origem de Gru é a continuação das aventuras dos Minions, e desta vez, eles ajudam um Gru ainda criança, descobrindo como ser vilão. Na década de 1970, Gru está crescendo no subúrbio. Fã de um grupo de supervilões conhecido como Vicious 6, Gru traça um plano para se tornar malvado o suficiente para se juntar a eles. Felizmente, ele recebe apoio de seus leais seguidores, os Minions. Juntos, eles exercem suas habilidades enquanto constroem seu primeiro covil, experimentam suas primeiras armas e realizam as primeiras missões. Quando os Vicious 6 expulsam seu líder - o lendário lutador Wild Knuckles - Gru participa de uma entrevista para se tornar seu mais novo membro. A entrevista não vai bem, e só piora depois que Gru os supera e de repente, o garoto se vê como inimigo mortal do grupo do mal. Gru se voltará para uma fonte improvável de orientação, o próprio Wild Knuckles, e descobrirá que até os supervilões precisam de uma ajudinha de seus amigos.                  
+                  <span class="fw-bold">Sinopse:</span> Minions 2: A Origem de Gru é a continuação das aventuras dos Minions, e desta vez, eles ajudam um Gru ainda criança, descobrindo como ser vilão. Na década de 1970, Gru está crescendo no subúrbio. Fã de um grupo de supervilões conhecido como Vicious 6, Gru traça um plano para se tornar malvado o suficiente para se juntar a eles. Felizmente, ele recebe apoio de seus leais seguidores, os Minions. Juntos, eles exercem suas habilidades enquanto constroem seu primeiro covil, experimentam suas primeiras armas e realizam as primeiras missões. Quando os Vicious 6 expulsam seu líder - o lendário lutador Wild Knuckles - Gru participa de uma entrevista para se tornar seu mais novo membro. A entrevista não vai bem, e só piora depois que Gru os supera e de repente, o garoto se vê como inimigo mortal do grupo do mal. Gru se voltará para uma fonte improvável de orientação, o próprio Wild Knuckles, e descobrirá que até os supervilões precisam de uma ajudinha de seus amigos.                  
                 </p>
-                <span class="fw-bold">Diretor:</span> 
-                <span class="mx-1">Kyle Balda, Brand Ableson</span> 
-                <span class="fw-bold">Roteiro:</span>
-                <span class="mx-1"> Paul, Brian Lynch</span> 
-                <span class="fw-bold">Estreia:</span>
-                <span class="mx-1"> 2022</span>
-                <p class="fw-bold">Elenco:
-                  <ul class="list-inline">
-                    <li class="list-inline-item">Leandro Hassum |</li>
-                    <li class="list-inline-item">Steve Carell |</li>
-                    <li class="list-inline-item">Alan Arkin</li>
-                  </ul>
-                </p>
-                <p class="fw-bold">Avaliação:
+                <p class="fw-bold d-inline">Diretor:</p> 
+                <p class="d-inline me-3">Kyle Balda, Brand Ableson</p> 
+                <p class="fw-bold d-inline">Roteiro:</p>
+                <p class="d-inline me-3">Paul, Brian Lynch</p> 
+                <p class="fw-bold d-inline">Estreia:</p>
+                <p class="d-inline me-3">2022</p>
+                <p class="fw-bold mt-3">Elenco:</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">Leandro Hassum |</li>
+                  <li class="list-inline-item">Steve Carell |</li>
+                  <li class="list-inline-item">Alan Arkin</li>
+                </ul>
+                <p class="fw-bold">Avaliação:</p>
+                <p>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -159,112 +172,352 @@
               </div>
             </div>  
           </div>
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-7">
+                <iframe class="video-fluid" src="https://www.youtube.com/embed/1dd0ecrO89o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-5">
+                <h4>DC LIGA DOS SUPER PETS</h4>
+                <p>
+                  <span class="fw-bold">Sinopse:</span> DC Super Pets acompanha Krypto o Supercão e Superman, amigos inseparáveis, compartilhando os mesmos superpoderes e lutando contra o crime em Metrópolis lado a lado. Quando Superman e o resto da Liga da Justiça são sequestrados por Lex Luthor (Maron Maron), Krypto (Dwayne Johnson), forma uma equipe de animais de estimação que receberam superpoderes: um cão chamado Ace (Kevin Hart), que se torna super forte e indestrutível; um porco chamado PB (Vanessa Bayer), que pode crescer até o tamanho gigante; uma tartaruga chamada Merton (Natasha Lyonne), que se torna super rápida; e um esquilo chamado Chip (Diego Luna), que ganha poderes elétricos. Ele deve convencer o bando de abrigo a dominar seus próprios poderes recém-descobertos e ajudá-lo a resgatar os Super-heróis - e assim Krypto cria a liga dos Super Pets.
+                </p>
+                <p class="fw-bold d-inline">Diretor:</p> 
+                <p class="d-inline me-3">Jared Stern</p> 
+                <p class="fw-bold d-inline">Roteiro:</p>
+                <p class="d-inline me-3">Jerry Siegel, Jared Stern</p> 
+                <p class="fw-bold d-inline">Estreia:</p>
+                <p class="d-inline me-3">2022</p>
+                <p class="fw-bold mt-3">Elenco:</p>
+                <ul class="list-inline">
+                  <li class="list-inline-item">Marcelo Garcia |</li>
+                  <li class="list-inline-item">Dwayne Johnson |</li>
+                  <li class="list-inline-item">Duda Espinoza</li>
+                </ul>
+                <p class="fw-bold">Avaliação:</p>
+                <p>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i> 
+                  <i class="bi bi-star"></i>              
+                </p>
+              </div>
+            </div>  
+          </div>          
+
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
+
     </div>
+
   </section>
-  <section id="em-destaque" >
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-md-8">
-          <h3 class="text-left">Em Destaque</h3>
-        </div>
-        <div class="col-md-4">
-          <select class="form-control" id="categoria">
-            <option>Categoria: Todos</option>
-            <option>Aventura</option>
-            <option>Romance</option>
-            <option>Comédia</option>
-          </select>
-        </div>
+
+  <section class="container pt-4" id="em-destaque">
+    
+    <div class="row">
+      <div class="col-md-8 mb-5">
+        <h2>Em Destaque</h2>
+      </div>
+      <div class="col-md-4 mb-5 text-end">
+        <select class="form-select" id="categoria">
+          <option>Categoria: Todos</option>
+          <option>Aventura</option>
+          <option>Romance</option>
+          <option>Comédia</option>
+        </select>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <img class="img-destaque" src="imgs/animais-fantasticos-os-segredos-de-dum.jpg" alt="animais faltasticos">
-        </div>
-        <div class="col-md-3">
-          <img class="img-destaque" src="imgs/casal-fachada.jpg" alt="casal de fachada">
-        </div>
-        <div class="col-md-3">
-          <img class="img-destaque" src="imgs/theprincess.jpg" alt="the princess">
-        </div>
-        <div class="col-md-3">
-          <img class="img-destaque" src="imgs/indecente.jpg" alt="indecente">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-end my-3">
-          <button type="button" class="btn btn-light"> + Carregar mais filmes</button> 
-        </div>
-      </div>
-    </div>       
-  </section>
-  <section>
-    <div class="container">
-      <h3 class="text-left">Últimas Avaliações</h3>
-      <div class="row">
-        <div class="col-md-4">
-          <article> 
-            <img src="" alt="">
-            <h5>Cinema com Rapadura</h5>
-            <span class="fw-bold">Avaliação:</span>
-            <span>
-              Tecnicamente, “Animais Fantásticos: Os Segredos de Dumbledore” é competente, pois, ainda que insira muito mais cenários em CGI cuja fotografia peca ao não conseguir criar tantas texturas quanto no primeiro filme, funciona por contar com um elenco afiado, bastante à vontade em cena.
-            </span>
-            <p>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article> 
-            <img src="" alt="">
-            <h5>Cinema com Rapadura</h5>
-            <span class="fw-bold">Avaliação:</span>
-            <span>
-              Tecnicamente, “Animais Fantásticos: Os Segredos de Dumbledore” é competente, pois, ainda que insira muito mais cenários em CGI cuja fotografia peca ao não conseguir criar tantas texturas quanto no primeiro filme, funciona por contar com um elenco afiado, bastante à vontade em cena.
-            </span>
-            <p>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article> 
-            <img src="" alt="">
-            <h5>Cinema com Rapadura</h5>
-            <span class="fw-bold">Avaliação:</span>
-            <span>
-              Tecnicamente, “Animais Fantásticos: Os Segredos de Dumbledore” é competente, pois, ainda que insira muito mais cenários em CGI cuja fotografia peca ao não conseguir criar tantas texturas quanto no primeiro filme, funciona por contar com um elenco afiado, bastante à vontade em cena.
-            </span>
-            <p>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-            </p>
-          </article>
-        </div>
+
+    <section class="row">
+      <article class="col-md-3 mb-3">
+        <img class="img-destaque" src="imgs/animais-fantasticos-os-segredos-de-dum.jpg" alt="animais faltasticos">
+      </article>
+      <article class="col-md-3 mb-3">
+        <img class="img-destaque" src="imgs/casal-fachada.jpg" alt="casal de fachada">
+      </article>
+      <article class="col-md-3 mb-3">
+        <img class="img-destaque" src="imgs/theprincess.jpg" alt="the princess">
+      </article>
+      <article class="col-md-3 mb-3">
+        <img class="img-destaque" src="imgs/indecente.jpg" alt="indecente">
+      </article>
+    </section>
+
+    <div class="row">
+      <div class="col text-end mt-4 mb-5">
+        <button type="button" class="btn btn-secondary"><i class="bi bi-plus-lg"></i> Carregar mais filmes</button> 
       </div>
     </div>
 
   </section>
+
+  <section class="container pt-4" id="ultimas-avaliacoes">
+
+    <div class="row">
+      <div class="col mb-5">
+        <h2>Últimas Avaliações</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-2">
+            <img src="imgs/avatar.png" alt="Ana Maria" class="img-fluid rounded-circle">
+          </div>
+          <article class="col-10">
+            <h5>Cinema com Rapadura</h5>
+            <p>
+              <span class="fw-bold">Avaliação:</span> Tecnicamente, “Animais Fantásticos: Os Segredos de Dumbledore” é competente, pois, ainda que insira muito mais cenários em CGI cuja fotografia peca ao não conseguir criar tantas texturas quanto no primeiro filme, funciona por contar com um elenco afiado, bastante à vontade em cena.
+            </p>
+            <p>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <span class="fw-bold">05/05/2022</span>
+            </p>
+          </article>          
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-2">
+            <img src="imgs/avatar2.png" alt="Marcelo Souza" class="img-fluid rounded-circle">
+          </div>
+          <article class="col-10">
+            <h5>Collider</h5>
+            <p>
+              <span class="fw-bold">Avaliação:</span> "Sorria não reserva surpresas. Sem grandes reviravoltas. Você sabe o que está acontecendo neste filme. É previsível desde o primeiro minuto. Mas é um passeio agradável e assustador que é bem planejado e atuado. Você saberá como termina nos primeiros cinco minutos do filme. Mas o passeio até lá vale a pena."
+            </p>
+            <p>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <span class="fw-bold">27/09/2022</span>
+            </p>
+          </article>          
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-2">
+            <img src="imgs/avatar3.png" alt="Lucas Melo" class="img-fluid rounded-circle">
+          </div>
+          <article class="col-10">
+            <h5>The Guardian</h5>
+            <p>
+              <span class="fw-bold">Avaliação:</span> "Ingresso para o Paraíso' pode muito bem ser um ótimo filme para quem procura diversão escapista, e isso é perfeitamente compreensível. Mas eu achei o dupla atuação maluca de George e Julia pouco trabalhoso."
+            </p>
+            <p>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <i class="bi bi-star"></i>
+              <span class="fw-bold">14/09/2022</span>
+            </p>
+          </article>          
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col text-end mt-4 mb-5">
+        <button type="button" class="btn btn-secondary"><i class="bi bi-plus-lg"></i> Carregar mais avaliações</button> 
+      </div>
+    </div>
+
+  </section>
+
+  <section class="container-fluid pt-4" id="entrevistas-making-of">
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col mb-5">
+          <h2>Entrevistas & Making of</h2>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <article class="col-md-4 mb-4">
+          <p>
+            <iframe class="video-fluid" src="https://www.youtube.com/embed/pmUNHnTHdjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p>
+          <p>
+            <span class="fw-bold">Filme:</span> A Mulher Rei
+          </p>
+          <p class="small-details">
+            <span class="fw-bold">Diretor:</span> Gina Prince-Bythewood<br>
+            <span class="fw-bold">Roteiro:</span> Maria Bello. Dana Steves
+            <span class="fw-bold">Estreia:</span> 2022
+          </p>
+        </article>
+        
+        <article class="col-md-4 mb-4">
+          <p>
+            <iframe class="video-fluid" src="https://www.youtube.com/embed/23D8OIq_oCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+          </p>
+          <p>
+            <span class="fw-bold">Filme:</span> Harry Potter e a Pedra Filosofal
+          </p>
+          <p class="small-details">
+            <span class="fw-bold">Diretor:</span> Chris Columbus<br>
+            <span class="fw-bold">Roteiro:</span> Steve Kloves, J.K. Rowling
+            <span class="fw-bold">Estreia:</span> 2001
+          </p>
+        </article>
+
+        <article class="col-md-4 mb-4">
+          <p>
+            <iframe class="video-fluid" src="https://www.youtube.com/embed/PAH_8kOhAdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          </p>
+          <p>
+            <span class="fw-bold">Filme:</span> Matrix: Resurrections
+          </p>
+          <p class="small-details">
+            <span class="fw-bold">Diretor:</span> Lana Wachowski<br>
+            <span class="fw-bold">Roteiro:</span> Lilly Wachowski, Lana Wachowski
+            <span class="fw-bold">Estreia:</span> 2021
+          </p>
+        </article>
+      </div>
+      
+      <div class="row">
+        <div class="col text-end mt-4 mb-5">
+          <button type="button" class="btn btn-secondary"><i class="bi bi-plus-lg"></i> Carregar mais filmes</button> 
+        </div>
+      </div>      
+
+    </div>
+
+  </section>
+
+  <div class="container pt-4">
+
+    <div class="row">
+
+      <div class="col-md-8">
+
+        <section id="novidades">
+          <h2>Novidades</h2>
+
+          <article class="row">
+            <div class="col-md-4">
+              <img class="img-fluid" src="imgs/novidade1.jpg" alt="8 personagens da Disney inspirados em famosos reais">
+            </div> 
+            <div class="col-md-8">
+              <h5>8 personagens da Disney inspirados em famosos reais</h5>
+              <p class="small-details">Você sabia que muitos personagens das animações da Disney são, na verdade, baseados em pessoas reais?</p>
+              <p>
+                <span class="badge rounded-pill text-bg-secondary">disney</span>
+                <span class="badge rounded-pill text-bg-secondary">personagem</span>
+                <span class="badge rounded-pill text-bg-secondary">pessoa</span>
+              </p>
+            </div>
+          </article>
+          <hr>
+
+          <article class="row">
+            <div class="col-md-4">
+              <img class="img-fluid" src="imgs/novidade2.jpg" alt="Marvel: Vingadores apareceram antes do MCU, mas completamente diferentes de hoje">
+            </div> 
+            <div class="col-md-8">
+              <h5>Marvel: Vingadores apareceram antes do MCU, mas completamente diferentes de hoje</h5>
+              <p class="small-details">Antes do Universo Cinematográfico Marvel, os heróis dos Vingadores apareceram nas telas de forma bem diferente.</p>
+              <p>
+                <span class="badge rounded-pill text-bg-secondary">marvel</span>
+                <span class="badge rounded-pill text-bg-secondary">hérois</span>
+                <span class="badge rounded-pill text-bg-secondary">vingadores</span>
+              </p>
+            </div>
+          </article>
+          <hr>
+
+          <article class="row">
+            <div class="col-md-4">
+              <img class="img-fluid" src="imgs/novidade3.jpg" alt="The Rock é convidado para ser lutador de UFC">
+            </div> 
+            <div class="col-md-8">
+              <h5>The Rock é convidado para ser lutador de UFC: "Ele faria sucesso!"</h5>
+              <p class="small-details">Dwayne Johnson (The Rock) estreia na DC com o lançamento do filme Adão Negro marcado para 20 de outubro nos cinemas.</p>
+              <p>
+                <span class="badge rounded-pill text-bg-secondary">ufc</span>
+                <span class="badge rounded-pill text-bg-secondary">The Rock</span>
+                <span class="badge rounded-pill text-bg-secondary">lutador</span>
+              </p>
+            </div>            
+          </article>
+
+        </section>
+
+      </div>
+
+      <aside class="col-md-4">
+        
+        <section class="row mb-3" id="sobre">
+          <h2>Sobre</h2>
+          <p class="small-details">Pipoca Filmes reúne em suas fichas de filmes e personalidades conteúdo confiável, além de fazer coberturas dos principais eventos cinematográficos, entrevistas com profissionais do setor e matérias especiais.</p>
+        </section>
+
+        <section class="row mb-3" id="editorial">
+          <h2>Editorial</h2>
+          <ul class="list-simple">
+            <li>
+              <i class="bi bi-person-fill"></i> 
+              <span class="fw-bold">Redação: </span>Larissa Rodrigues
+            </li>
+            <li>
+              <i class="bi bi-person-fill"></i>
+              <span class="fw-bold">Pesquisa: </span>Larissa Rodrigues
+            </li>
+            <li>
+              <i class="bi bi-person-fill"></i>
+              <span class="fw-bold">Gerente Geral: </span>Larissa Rodrigues
+            </li>
+          </ul>
+        </section>
+        
+        <section class="row mb-3" id="redes-sociais">
+          <h4>redes sociais:</h4>
+          <p>
+            <i class="bi bi-facebook fs-3 me-2"></i>
+            <i class="bi bi-twitter fs-3 me-2"></i>
+            <i class="bi bi-instagram fs-3 me-2"></i>
+          </p>
+        </section>
+      </aside>      
+
+    </div>
+
+  </div>
+
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10">
+          <p>
+            Copyright 2022 - Disciplina de Desenvolvimento e Interfaces Web - <span class="fw-bold">ICEI PUC Minas</span>
+          </p>
+        </div>
+        <div class="col-md-2 text-center text-md-end">
+          <img class="img-brand align-middle" src="imgs/pipoca_icone.png" alt="pipoca filmes"> Pipoca Filmes
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,23 +1,61 @@
 body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: rgb(171, 171, 171);
 }
-#lancamentos{
+
+@media (min-width: 1400px) {
+  .nav-link:not(.last)::after {
+    content: '|';
+    padding-left: 15px;
+  }
+}
+
+.img-brand {
+  width: 30px;
+  height: auto;
+}
+
+#lancamentos, 
+footer {
   background-color: rgb(221, 220, 220);
-  padding: 2rem;
-  color:#4d4d4de3;
 }
-.img-lancamento {
 
-  min-width: 100%;
-  min-height: 100%;
+.video-fluid {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
 
+.carousel-inner {
+  max-height: 100vh;
+  height: 550px;
+  overflow-y: auto;
 }
-.espaco { 
-  margin-bottom: -50px;
+
+.carousel-item p,
+.carousel-item li,
+.small-details {
+  font-size: .85rem;
 }
+
+.carousel-indicators [data-bs-target] {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: rgb(70, 70, 72);
+}
+
 .img-destaque {
   max-width: 100%;
   min-height: 100%;
 }
 
+#entrevistas-making-of {
+  background-color: rgb(221, 220, 220);
+}
+
+.list-simple {
+  list-style-type: none;
+}
+
+.list-simple .bi {
+  font-size: 1.5rem;
+}
